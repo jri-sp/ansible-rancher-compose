@@ -232,7 +232,7 @@ def main():
     elif state == 'present':
         args.append('create')
     elif state == 'reloaded':
-        args.extend(['up', '-d', '--upgrade', '--confirm-upgrade', '--pull'])
+        args.extend(['up', '-d', '--force-upgrade', '--confirm-upgrade', '--pull'])
     elif state == 'restarted':
         args.append('restart')
     elif state == 'stopped':
